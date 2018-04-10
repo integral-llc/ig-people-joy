@@ -27,7 +27,7 @@ if (cluster.isMaster) {
   app.use(bodyParser.urlencoded({extended: true}));
   app.use(bodyParser.json());
 
-  const port = 3003;
+  const port = process.env.PORT || 3003;
 
   const router = express.Router();
 
@@ -56,6 +56,6 @@ if (cluster.isMaster) {
   app.use('/api', router);
 
   app.listen(port, () => {
-    console.log('Server has started on port: ', port);
+    console.error(`Node cluster worker ${process.pid}: listening on port ${port}`);
   });
 }
