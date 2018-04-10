@@ -74,7 +74,7 @@ export default withAuth(connect(mapStateToProps, mapDispatchToProps)(class Home 
         </div>
         <div className="row">
           <div className="col-lg-2">
-            <Button>Change Password</Button>
+            {/*<Button>Change Password</Button>*/}
           </div>
           <div className="col-lg-2">
             <Button className="btn-primary" onClick={this.logout}>Logout</Button>
