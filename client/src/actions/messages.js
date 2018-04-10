@@ -29,7 +29,7 @@ export function makeRemoteCall(auth) {
     });
 
     auth.getAccessToken()
-      .then(token => fetch('http://localhost:3003/api/secure', {
+      .then(token => fetch('/api/secure', {
         headers: {
           Authorization: `Bearer ${token}`,
         }

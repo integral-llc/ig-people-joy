@@ -131,9 +131,9 @@ export default withAuth(connect(mapStateToProps, mapDispatchToProps)(class Home 
           <div className="col-lg-2">
             <Button className="btn-primary" onClick={this.login}>Login</Button>
           </div>
-          <div className="col-lg-2">
-            <Button className="btn-default">Call public API method (see console.log for result)</Button>
-          </div>
+          {/*<div className="col-lg-2">*/}
+            {/*<Button className="btn-default">Call public API method (see console.log for result)</Button>*/}
+          {/*</div>*/}
         </div>
       </div>
     )

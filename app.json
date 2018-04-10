@@ -1,0 +1,22 @@
+{
+  "name": "people-joy-demo-app",
+  "description": "ReactAPP + Node.JS for PeopleJoy",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
+

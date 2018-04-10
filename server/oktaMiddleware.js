@@ -13,7 +13,7 @@ const oktaJwtVerifier = new OktaJwtVerifier({
  * if the token is not present or fails validation.  If the token is valid its
  * contents are attached to req.jwt
  */
-export function authenticationRequired(req, res, next) {
+module.exports.authenticationRequired = function(req, res, next) {
   const authHeader = req.headers.authorization || '';
   const match = authHeader.match(/Bearer (.+)/);
 
@@ -35,3 +35,4 @@ export function authenticationRequired(req, res, next) {
 
     });
 }
+
